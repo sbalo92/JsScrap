@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target":"es5",
+        "outFile":"build/JsScrap.js"
+    },
+    "files": [
+        "core.ts",
+        "point.ts",
+        "linearRing.ts"
+    ]
+}
