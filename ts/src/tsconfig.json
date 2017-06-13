@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
-        "target":"es5",
+        "target":"es6",
         "outFile":"build/JsScrap.js"
     },
     "files": [
         "core.ts",
         "point.ts",
-        "linearRing.ts"
+        "linearRing.ts",
+        "linearRingCollection.ts"
     ]
 }

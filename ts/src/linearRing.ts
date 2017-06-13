@@ -1,5 +1,5 @@
 /// <reference path="core.ts"/>
-class _LinearRing extends Array<_Position>{};
+
 abstract class LinearRing extends AbstractGeometry {
     static TYPE = "LinearRing";
     // _positions:_LinearRing;  
@@ -27,6 +27,8 @@ abstract class LinearRing extends AbstractGeometry {
 class MultiPoint extends LinearRing {
     static TYPE = "MultiPoint";
 }
+AbstractGeometry.TYPES.set(MultiPoint.TYPE,MultiPoint);
 class LineString extends LinearRing {
     static TYPE = "LineString";
 }
+AbstractGeometry.TYPES.set(LineString.TYPE,LineString);

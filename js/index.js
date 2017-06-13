@@ -9,7 +9,25 @@ var multiPoint = new MultiPoint({
     "coordinates": [[100.0, 0.0], [101.0, 1.0]]
 });
 var lineString = new LineString({
-            'type': 'LineString',
-            'coordinates': [[4e6, 2e6], [8e6, -2e6]]
-          });
+    'type': 'LineString',
+    'coordinates': [[4e6, 2e6], [8e6, -2e6]]
+});
+var polygon = new Polygon({
+    "type": "Polygon",
+    "coordinates": [
+        [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]]
+    ]
+});
+var polygonH = new Polygon({
+    "type": "Polygon",
+    "coordinates": [
+        [[100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0]],
+        [[100.2, 0.2], [100.8, 0.2], [100.8, 0.8], [100.2, 0.8], [100.2, 0.2]]
+    ]
+});
+var rawGj = {
+    'type': 'LineString',
+    'coordinates': [[4e6, 2e6], [8e6, -2e6]]
+};
+
 // })();

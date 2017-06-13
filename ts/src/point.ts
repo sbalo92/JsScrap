@@ -2,6 +2,7 @@
 
 class Point extends AbstractGeometry {
     static TYPE = "Point";
+        
     _coordinates: _Position;
     _make(rawGeoJson: RawGeometry) {
         this._coordinates = (this._coordinates instanceof _Position) ? this._coordinates : new _Position(0, 0);
@@ -45,3 +46,4 @@ class Point extends AbstractGeometry {
         this._y = n;
     }
 }
+AbstractGeometry.TYPES.set(Point.TYPE,Point);

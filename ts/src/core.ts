@@ -36,6 +36,9 @@ class _Position extends Array {
         return "(" + this.x + "," + this.y + ")";
     }
 }
+class _LinearRing extends Array<_Position>{ };
+class _LinearRingArray extends Array<_LinearRing>{ };
+
 interface Geometry {
     _make(geoJson: RawGeometry);
     _positions: _Position[];
@@ -46,7 +49,7 @@ interface Geometry {
 abstract class AbstractGeometry implements Geometry {
     _positions: _Position[];
     coordinates: any[];
-
+    static TYPES = new Map();
     static TYPE = "AbstractFeature";
     get type() {
         return (this.constructor as any).TYPE
